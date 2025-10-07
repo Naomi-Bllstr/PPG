@@ -1,0 +1,76 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:aliceblue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+button{
+    padding: 20px 30px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 7%;
+    box-shadow: 0 4px 8px gray;
+}
+
+button:hover{
+    background-color: deepskyblue;
+}
+
+.alert-box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.alert-content{
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px black;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.alert-content h1{
+    font-size: 30px ;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.alert-content button{
+    padding: 10px 20px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.alert-content button:hover{
+    background-color: crimson;
+}
+
+
+
+@keyframes myAnimation {
+    from{position: relative; top: -100px; opacity: 0;}
+    to{position: relative; top: 0px; opacity: 100%;}
+}
